@@ -1,0 +1,6 @@
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+  <div *ngFor="let hero of items">
+   <a (click)="addNewHero()" routerLink="/detail/{{hero.id}}">{{ hero.name }}</a> 
+  </div>
+</div>

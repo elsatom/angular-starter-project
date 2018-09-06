@@ -10,6 +10,7 @@ import {Hero} from './../hero';
 export class DashboardComponent implements OnInit {
 
   heroList: Hero[];
+  displaySideMenu: boolean;
   constructor(private heroService: HeroService) { }
 
   ngOnInit() {
@@ -19,6 +20,10 @@ export class DashboardComponent implements OnInit {
     getHeroList(): void {
     this.heroService.getHeroList()
       .subscribe(heroes => this.heroList = heroes.slice(1, 5));
+  }
+
+  addHeroCheck(event: any) {
+    this.heroList.push({id: 111, name: 'Test'});
   }
 
 }

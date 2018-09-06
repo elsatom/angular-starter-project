@@ -1,9 +1,17 @@
-<h3>Top Heroes</h3>
-<div class="grid grid-pad">
-  <a *ngFor="let hero of heroList" class="col-1-4" routerLink="/detail/{{hero.id}}">
-    <div class="module hero">
-      <h4>{{hero.name}}</h4>
-    </div>
-  </a>
+<div class="container">
+  <div (click)="displaySideMenu = !displaySideMenu">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+  <h3>Top Heroes</h3>
+  <div *ngIf="displaySideMenu">
+    <app-side-menu (addHero)="addHeroCheck($event)" [items]="heroList"></app-side-menu>
+  </div>
+  <div class="grid grid-pad">
+    <a *ngFor="let hero of heroList" class="col-1-4" routerLink="/detail/{{hero.id}}">
+      <div class="module hero">
+        <h4>{{hero.name}}</h4>
+      </div>
+    </a>
+  </div>
+  <app-hero-search></app-hero-search>
 </div>
-<app-hero-search></app-hero-search>
