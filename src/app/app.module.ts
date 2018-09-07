@@ -19,6 +19,7 @@ import { HeroTableDisplayComponent } from './hero-table-display/hero-table-displ
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProfileEditorComponent } from './profile-editor/profile-editor.componen
     SideMenuComponent,
     HeroTableDisplayComponent,
     NameEditorComponent,
-    ProfileEditorComponent
+    ProfileEditorComponent,
+    DynamicStyleComponent
   ],
   imports: [
     BrowserModule,

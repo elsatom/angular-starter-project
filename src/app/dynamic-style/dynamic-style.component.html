@@ -1,0 +1,7 @@
+<div class="container p-50">
+  <div class="container-style" [ngClass]="{'bg-1': !buttonClicked, 'bg-2': buttonClicked}">
+    <div class="text-center">
+      <button class="btn style-button" (click)="buttonClicked = !buttonClicked">Click</button>
+    </div>
+  </div>
+</div>
