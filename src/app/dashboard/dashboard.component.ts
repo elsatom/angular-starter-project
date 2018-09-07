@@ -23,7 +23,9 @@ export class DashboardComponent implements OnInit {
   }
 
   addHeroCheck(event: any) {
-    this.heroList.push({id: 111, name: 'Test'});
+    console.log(event);
+    
+    // this.heroList.push({id: 111, name: 'Test'});
   }
 
 }

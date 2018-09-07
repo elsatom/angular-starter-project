@@ -14,6 +14,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
+import { HeroTableDisplayComponent } from './hero-table-display/hero-table-display.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { SideMenuComponent } from './side-menu/side-menu.component';
     MessagesComponent,
     DashboardComponent,
     HeroSearchComponent,
-    SideMenuComponent
+    SideMenuComponent,
+    HeroTableDisplayComponent
   ],
   imports: [
     BrowserModule,
