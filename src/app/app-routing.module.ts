@@ -1,3 +1,4 @@
+import { NamePipeExampleComponent } from './name-pipe-example/name-pipe-example.component';
 import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { NameEditorComponent } from './name-editor/name-editor.component';
@@ -17,7 +18,8 @@ const routes: Routes = [
   { path: 'detail/:id', component: HeroDetailComponent },
   { path: 'reactive-form', component: NameEditorComponent },
   { path: 'reactive-form-profile', component: ProfileEditorComponent },
-  { path: 'dynamic-background', component: DynamicStyleComponent }
+  { path: 'dynamic-background', component: DynamicStyleComponent },
+  { path: 'pipe', component: NamePipeExampleComponent }
 ];
 
 @NgModule({

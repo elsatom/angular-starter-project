@@ -1,0 +1,5 @@
+<div class="container p-50">
+  <div *ngFor="let name of names; let i=index">
+    Name of {{i+1}} : {{ name.firstName | capitalize}}
+  </div>
+</div>

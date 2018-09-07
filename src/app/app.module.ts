@@ -1,3 +1,4 @@
+import { CapitalizePipe } from './capitalize-pipe';
 import { NameEditorComponent } from './name-editor/name-editor.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -20,6 +21,7 @@ import { HeroTableDisplayComponent } from './hero-table-display/hero-table-displ
 import { ReactiveFormsModule } from '@angular/forms';
 import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
 import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
+import { NamePipeExampleComponent } from './name-pipe-example/name-pipe-example.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { DynamicStyleComponent } from './dynamic-style/dynamic-style.component';
     HeroTableDisplayComponent,
     NameEditorComponent,
     ProfileEditorComponent,
-    DynamicStyleComponent
+    DynamicStyleComponent,
+    NamePipeExampleComponent,
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,
