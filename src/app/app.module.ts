@@ -1,3 +1,4 @@
+import { NameEditorComponent } from './name-editor/name-editor.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { NgModule } from '@angular/core';
@@ -16,6 +17,9 @@ import { HeroSearchComponent } from './hero-search/hero-search.component';
 import { SideMenuComponent } from './side-menu/side-menu.component';
 import { HeroTableDisplayComponent } from './hero-table-display/hero-table-display.component';
 
+import { ReactiveFormsModule } from '@angular/forms';
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +29,9 @@ import { HeroTableDisplayComponent } from './hero-table-display/hero-table-displ
     DashboardComponent,
     HeroSearchComponent,
     SideMenuComponent,
-    HeroTableDisplayComponent
+    HeroTableDisplayComponent,
+    NameEditorComponent,
+    ProfileEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +41,8 @@ import { HeroTableDisplayComponent } from './hero-table-display/hero-table-displ
     HttpClientModule,
     HttpClientInMemoryWebApiModule.forRoot(
       InMemoryDataService, { dataEncapsulation: false }
-    )
+    ),
+    ReactiveFormsModule
   ],
   bootstrap: [AppComponent]
 })

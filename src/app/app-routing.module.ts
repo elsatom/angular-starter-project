@@ -1,3 +1,5 @@
+import { ProfileEditorComponent } from './profile-editor/profile-editor.component';
+import { NameEditorComponent } from './name-editor/name-editor.component';
 import { HeroTableDisplayComponent } from './hero-table-display/hero-table-display.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -11,7 +13,9 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'table', component: HeroTableDisplayComponent },
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'detail/:id', component: HeroDetailComponent }
+  { path: 'detail/:id', component: HeroDetailComponent },
+  { path: 'reactive-form', component: NameEditorComponent },
+  { path: 'reactive-form-profile', component: ProfileEditorComponent }
 ];
 
 @NgModule({
